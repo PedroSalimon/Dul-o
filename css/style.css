@@ -1,0 +1,81 @@
+:root {
+    --color-white: #fff;
+    --color-green: #173302;
+    --background-color: #0D0F0E;
+    --btn-color: #2f4858;
+    --font-family: "Playfair Display", sans-serif;
+    --transition: .5s;
+    --font-size: 1.5rem;
+    --gradient: linear-gradient(to right top, #aaa746, #7f8933, #576b22, #334d12, #143100);
+    --gradient-rodape: linear-gradient(to right top, #334d12, #1a4f2a, #00503e, #004f4e, #0b4c57, #0a4a54, #094752, #08454f, #004242, #003d30, #00381b, #143100);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.text-white {color: var(--color-white)}
+.text-size {font-size: var(--font-size);}
+.text-bg {background-color: var(--gradient);}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    border-color: white;
+}
+
+.bi-filter-right {
+    color: white;
+    font-size: 3rem;
+}
+
+body {
+    background: var(--gradient);
+}
+
+.background {
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)),
+        url(../imagens/pexels-domleroy-3991976.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50%;
+}
+
+.rodape {
+    height: 30vh;
+    background-image: var(--gradient-rodape);
+}
+
+.headline {
+    padding: 0 15px;
+    width: 100%;
+    height: calc(70vh - 100px);
+    gap: 20px;
+
+    & h2 {
+        font-size: clamp(22px, 8vmin, 45px);
+    }
+
+    & h3 {
+        font-size: clamp(18px, 6vmin, 40px);
+    }
+}
+
+img {
+        border: 1px solid;
+        border-radius: 8px;
+        box-shadow: 1px 1px 30px #3a3a3a;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
