@@ -4,7 +4,6 @@
     --background-color: #0D0F0E;
     --btn-color: #2f4858;
     --font-family: "Playfair Display", sans-serif;
-    --transition: .5s;
     --font-size: 1.5rem;
     --gradient: linear-gradient(to right top, #aaa746, #7f8933, #576b22, #334d12, #143100);
     --gradient-rodape: linear-gradient(to right top, #334d12, #1a4f2a, #00503e, #004f4e, #0b4c57, #0a4a54, #094752, #08454f, #004242, #003d30, #00381b, #143100);
@@ -50,8 +49,11 @@ body {
 }
 
 .rodape {
-    height: 30vh;
+    height: 60vh;
     background-image: var(--gradient-rodape);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
 }
 
 .headline {
